@@ -31,7 +31,7 @@ const Navbar = () => {
               to="/about"
             >
               <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
-                About
+                ABOUT
               </div>
             </Link>
           </li>

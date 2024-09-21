@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
+import { FaInstagram , FaTwitterSquare } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
+
 
 const Home = () => {
   return (
@@ -24,37 +25,37 @@ const Home = () => {
             <span className=" text-[#16f2b3]">Frontend Developer</span>.
           </h1>
 
-          <div className="my-12 flex items-center gap-5">
+          <div className="my-12 flex items-center gap-6">
             <Link
-              to="/github"
+              to="https://github.com/RajeevKrSah"
               target="_blank"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
               <BsGithub size={30} />
             </Link>
             <Link
-              to="/linkdin"
+              to="https://www.linkedin.com/in/rajeevkumarsah"
               target="_blank"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
               <BsLinkedin size={30} />
             </Link>
             <Link
-              to="/facebook"
+              to="https://www.instagram.com/rajeev__sah/"
               target="_blank"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
-              <FaFacebook size={30} />
+              <FaInstagram size={30} />
             </Link>
             <Link
-              to="/leetcode"
+              to="https://leetcode.com/u/Rajeev_Sah/"
               target="_blank"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
               <SiLeetcode size={30} />
             </Link>
             <Link
-              to="/twitter"
+              to="https://x.com/rajeev__sah"
               target="_blank"
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
