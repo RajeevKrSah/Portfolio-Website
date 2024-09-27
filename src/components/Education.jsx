@@ -1,5 +1,5 @@
 import React from "react";
-import { educations } from "../../public/data/education";
+import { educations } from "../assets/data/education.js";
 import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "../components/helper/animation-lottie";
 import GlowCard from "../components/helper/glow-card";
