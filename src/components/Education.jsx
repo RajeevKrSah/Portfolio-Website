@@ -7,7 +7,7 @@ import lottieFile from '../components/helper/study.json';
 
 const Education = () => {
   return (
-    <div id="education" className="relative z-50 border-t my-0 lg:my-0 border-[#25213b]">
+    <div id="education" className="relative z-50 border-t my-12 lg:my-2 border-[#25213b]">
       <img
         src="image\section.svg"
         alt="Hero"

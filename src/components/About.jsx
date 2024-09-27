@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="relative z-50 border-t my-0 lg:my-0 border-[#25213b]">
+    <div className="relative z-50 border-t my-12 lg:mt-2 lg:mb-14 border-[#25213b]">
       <img
         src="image\section.svg"
         alt="Hero"
@@ -32,11 +32,22 @@ const About = () => {
             <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">
               Who I am?
             </p>
-            <p className="text-gray-200 text-sm lg:text-lg">
-            Hi, I'm <strong>Rajeev Kumar</strong>, a passionate and enthusiastic programmer with a self-driven attitude towards learning and growth. I specialize in web application development, with a strong focus on JavaScript as my core technology. I enjoy exploring new technologies, solving complex problems, and building solutions that contribute to making the web more open and accessible to everyone. 
+            <p className="text-gray-200 text-lg lg:text-lg">
+              Hi, I'm <strong>Rajeev Kumar</strong>, a passionate and
+              enthusiastic programmer with a self-driven attitude towards
+              learning and growth. I specialize in web application development,
+              with a strong focus on JavaScript as my core technology. 
             </p>
-            <p className="text-gray-200 text-sm lg:text-lg">
-            I have a deep interest in all aspects of web development and am constantly working to enhance my skills and knowledge. I am currently open to job opportunities that align with my expertise and passion.
+            <p className="text-gray-200 text-lg lg:text-lg">
+              I enjoy exploring new technologies, solving complex problems, and building
+              solutions that contribute to making the web more open and
+              accessible to everyone.
+            </p>
+            <p className="text-gray-200 text-lg lg:text-lg">
+              I have a deep interest in all aspects of web development and am
+              constantly working to enhance my skills and knowledge. I am
+              currently open to job opportunities that align with my expertise
+              and passion.
             </p>
           </div>
           <div className="flex justify-center order-1 lg:order-2">
