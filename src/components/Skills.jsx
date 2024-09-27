@@ -4,7 +4,7 @@ import { skillsData } from "../assets/data/skills";
 import { skillsImage } from "../assets/data/skill-img";
 const Skills = () => {
   return (
-    <div id="skills" className="relative z-50 border-t my-12 lg:my-2 border-[#25213b]">
+    <div id="skills" className="relative z-50 border-t my-12 lg:my-0 border-[#25213b]">
      <img
         src="image\section.svg"
         alt="Hero"
