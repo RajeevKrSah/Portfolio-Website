@@ -7,7 +7,10 @@ import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 import "./App.css"
+import "./card.css"
 const router = createBrowserRouter(
   [
     {
@@ -71,6 +74,7 @@ const router = createBrowserRouter(
 function App() {
   return (
     <div>
+      <ToastContainer />
       <RouterProvider router={router} />
     </div>
   )

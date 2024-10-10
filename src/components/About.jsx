@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="relative z-50 border-t my-12 lg:mt-2 lg:mb-14 border-[#25213b]">
       <img
-        src="image\section.svg"
+        src="image/section.svg"
         alt="Hero"
         width={1572}
         height={795}
