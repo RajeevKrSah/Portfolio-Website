@@ -119,11 +119,13 @@ const Home = () => {
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">CSS</span>
                 <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Tailwind CSS</span>
+                <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">JavaScript</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">React</span>
+                <span className="text-amber-300">React JS</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Express</span>
+                <span className="text-amber-300">Express JS</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">MySql</span>
                 <span className="text-gray-400">{"', '"}</span>
