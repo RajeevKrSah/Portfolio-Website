@@ -11,6 +11,7 @@ import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 import "./App.css"
 import "./card.css"
+import ScrollToTop from '../src/helper/ScrollToTop.jsx'
 const router = createBrowserRouter(
   [
     {
@@ -24,7 +25,9 @@ const router = createBrowserRouter(
         <Education/>
         <Projects />
         <Contact />
+        <ScrollToTop/>
         <Footer/>
+        
       </div>
     },
     {
