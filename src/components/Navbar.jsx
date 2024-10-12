@@ -1,7 +1,17 @@
 import react from "react";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const handleNavigation = (sectionId) => {
+    navigate("/");
+    setTimeout(() => {
+      document
+        .getElementById(sectionId)
+        ?.scrollIntoView({ behavior: "smooth" });
+    }, 50);
+  };
   return (
     <nav className="bg-transparent">
       <div className="flex items-center justify-between py-5">
@@ -25,55 +35,45 @@ const Navbar = () => {
               </div>
             </Link>
           </li>
-          <li>
-            <Link
-              className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              to="/about"
-            >
-              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
-                ABOUT
-              </div>
-            </Link>
+          <li
+            className="block px-4 py-2 no-underline outline-none hover:no-underline cursor-pointer"
+            onClick={() => handleNavigation("about")}
+          >
+            <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
+              ABOUT
+            </div>
           </li>
-          <li>
-            <Link
-              className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              to="/skills"
-            >
-              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
-                SKILLS
-              </div>
-            </Link>
+          <li
+            className="block px-4 py-2 no-underline outline-none hover:no-underline cursor-pointer"
+            onClick={() => handleNavigation("skills")}
+          >
+            <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
+              SKILLS
+            </div>
           </li>
-          <li>
-            <Link
-              className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              to="/education"
-            >
-              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
-                EDUCATION
-              </div>
-            </Link>
+          <li
+            className="block px-4 py-2 no-underline outline-none hover:no-underline cursor-pointer"
+            onClick={() => handleNavigation("education")}
+          >
+            <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
+              EDUCATION
+            </div>
           </li>
-          <li>
-            <Link
-              className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              to="/projects"
-            >
-              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
-                PROJECTS
-              </div>
-            </Link>
+          <li
+            className="block px-4 py-2 no-underline outline-none hover:no-underline cursor-pointer"
+            onClick={() => handleNavigation("projects")}
+          >
+            <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
+              PROJECTS
+            </div>
           </li>
-          <li>
-            <Link
-              className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              to="/contact"
-            >
-              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
-                CONTACT
-              </div>
-            </Link>
+          <li
+            className="block px-4 py-2 no-underline outline-none hover:no-underline cursor-pointer"
+            onClick={() => handleNavigation("contact")}
+          >
+            <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
+              CONTACT
+            </div>
           </li>
         </ul>
       </div>

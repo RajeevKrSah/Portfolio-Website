@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="relative z-50 border-t my-12 lg:mt-2 lg:mb-10 border-[#25213b]"
+      className="relative z-50 border-t my-10 lg:mb-5 lg:mt-0 border-[#25213b]"
     >
       <img
         src="image\hero.svg"
@@ -28,7 +28,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex justify-center my-3 lg:py-2">
+      <div className="flex justify-center my-3 lg:pt-8 lg:pb-0">
         <div className="flex  items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">

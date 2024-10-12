@@ -6,7 +6,7 @@ import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
 
 
-const Home = () => {
+const Hero = () => {
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12 ">
       <img
@@ -203,4 +203,4 @@ const Home = () => {
   );
 }
 
-export default Home
+export default Hero

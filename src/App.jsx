@@ -1,90 +1,40 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Education from "./components/Education";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
-import { ToastContainer} from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'
-import "./App.css"
-import "./card.css"
-import ScrollToTop from '../src/helper/ScrollToTop.jsx'
-const router = createBrowserRouter(
-  [
-    {
-      path:"/",
-      element: 
-      <div className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
-        <Navbar/>
-        <Home/>
-        <About />
-        <Skills />
-        <Education/>
-        <Projects />
-        <Contact />
-        <ScrollToTop/>
-        <Footer/>
-        
-      </div>
-    },
-    {
-      path:"/about",
-      element: 
-      <div className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
-        <Navbar/>
-        <About/>
-        <Footer />
-      </div>
-    },
-    {
-      path:"/contact",
-      element: 
-      <div className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
-        <Navbar/>
-        <Contact/>
-        <Footer />
-      </div>
-    },
-    {
-      path:"/education",
-      element: 
-      <div className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
-        <Navbar/>
-        <Education/>
-        <Footer/>
-      </div>
-    },
-    {
-      path:"/skills",
-      element: 
-      <div className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
-        <Navbar/>
-        <Skills/>
-        <Footer/>
-      </div>
-    },
-    {
-      path:"/projects",
-      element: 
-      <div className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
-        <Navbar/>
-        <Projects/>
-        <Footer />
-      </div>
-    },
-    
-  ]
-)
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage.jsx";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "./App.css";
+import "./card.css";
+import Navbar from "./components/Navbar.jsx";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
+
+
 function App() {
   return (
-    <div>
-      <ToastContainer />
-      <RouterProvider router={router} />
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <ToastContainer />
+              <HomePage />
+            </>
+          }
+        />
+        <Route 
+          path="/contact"
+          element={
+            <div className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
+            <Navbar/>
+            <Contact/>
+            </div>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
