@@ -1,9 +1,9 @@
 import React from "react";
 import { educations } from "../assets/data/education.js";
 import { BsPersonWorkspace } from "react-icons/bs";
-import AnimationLottie from "../components/helper/animation-lottie";
-import GlowCard from "../components/helper/glow-card.jsx";
-import education from '../components/helper/study.json';
+import AnimationLottie from "../helper/animation-lottie.jsx";
+import GlowCard from "../helper/glow-card.jsx";
+import education from '../helper/study.json';
 
 const Education = () => {
   return (

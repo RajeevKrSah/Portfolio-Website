@@ -1,6 +1,6 @@
 import React from 'react'
 import {projectsData} from "../assets/data/projects-data.js"
-import ProjectCard from './ProjectCard.jsx'
+import ProjectCard from '../helper/ProjectCard.jsx'
 const Projects = () => {
   return (
     <div id="projects" className="relative z-50 border-t my-12 lg:mt-2 lg:mb-12 border-[#25213b]">
