@@ -7,6 +7,7 @@ import { SiLeetcode } from "react-icons/si";
 
 
 const Hero = () => {
+  const customLink = import.meta.env.VITE_RESUME_URL;
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12 ">
       <img
@@ -78,7 +79,7 @@ const Hero = () => {
               className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
               role="button"
               target="_blank"
-              to="https://drive.google.com/file/d/1At1PfuNX6w6u8BEUTVp3o40aBwmKeGzA/view?usp=sharing"
+              to={customLink}
             >
               <span className="bg-transparent">Get Resume</span>
               <MdDownload size={16} style={{"background":"transparent"}}/>
