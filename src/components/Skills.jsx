@@ -71,7 +71,7 @@ const Skills = () => {
             ))}
           </Marquee>
         </div>
-        <div className="lg:m-8">
+        <div>
           <Marquee
             gradient={false}
             speed={80}

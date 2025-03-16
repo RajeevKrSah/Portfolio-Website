@@ -46,6 +46,7 @@ import mongoDB from '../skill-img/mongoDB.svg';
 import mysql from '../skill-img/mysql.svg';
 import nextJS from '../skill-img/nextJS.svg';
 import nginx from '../skill-img/nginx.svg';
+import nodejs from '../skill-img/nodejs.svg';
 import numpy from '../skill-img/numpy.svg';
 import nuxtJS from '../skill-img/nuxtJS.svg';
 import opencv from '../skill-img/opencv.svg';
@@ -182,6 +183,8 @@ export const skillsImage = (skill) => {
       return materialui;
     case 'nginx':
       return nginx;
+    case 'nodejs':
+      return nodejs;
     case 'numpy':
       return numpy;
     case 'opencv':

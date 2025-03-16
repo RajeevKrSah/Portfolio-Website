@@ -2,7 +2,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <div id="about" className="relative z-50 border-t my-12 lg:mt-2 lg:mb-14 border-[#25213b]">
+    <div
+      id="about"
+      className="relative z-50 border-t my-12 lg:mt-2 lg:mb-14 border-[#25213b]"
+    >
       <img
         src="image/section.svg"
         alt="Hero"
@@ -26,44 +29,62 @@ const About = () => {
         </div>
       </div>
 
-      <div className="py-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-          <div className="order-2 lg:order-1">
-            <div className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">
-              Who I am?
-            </div>
-            <p className="text-gray-200 text-lg lg:text-lg">
-            Hi, I'm <strong>Rajeev Kumar</strong>, a passionate and
-              enthusiastic programmer with a self-driven attitude towards
-              learning and growth. I specialize in web application development,
-              with a strong focus on JavaScript as my core technology.
+      <section className="py-12 md:py-16 lg:py-20">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-8 lg:gap-12 xl:gap-16">
+            {/* Text Content */}
+            <div className="order-2 lg:order-1 space-y-6">
+              <h2 className="font-semibold text-2xl md:text-3xl text-emerald-400 uppercase tracking-wide">
+                Who Am I?
+              </h2>
 
-            </p>
-            <p className="text-gray-200 text-lg lg:text-lg">
-            I enjoy exploring new technologies, solving complex problems, and building
-              solutions that contribute to making the web more open and
-              accessible to everyone.
-            </p>
-            <p className="text-gray-200 text-lg lg:text-lg">
-            I have a deep interest in all aspects of web development and am
-              constantly working to enhance my skills and knowledge. 
-            </p>
-            <p className="text-cyan-300 text-lg  lg:text-lg">
-              I am currently open to job opportunities that align with my
-              expertise and passion.
-            </p>
-          </div>
-          <div className="flex justify-center order-1 lg:order-2">
-            <img
-              src="image/rajeev.jpg"
-              width={300}
-              height={280}
-              alt="Rajeev Kumar"
-              className="rounded-lg transition-all duration-1000 hover:grayscale-0 hover:scale-110 cursor-pointer"
-            />
+              <div className="space-y-5">
+                <p className="text-gray-100 leading-relaxed text-lg">
+                  Hi, I'm{" "}
+                  <strong className="font-semibold text-pink-500">
+                    Rajeev Kumar
+                  </strong>
+                  , a passionate full-stack developer with a self-driven mindset
+                  for continuous learning and growth. I specialize in modern web
+                  application development, leveraging JavaScript ecosystem as my
+                  core competency.
+                </p>
+
+                <p className="text-gray-100 leading-relaxed text-lg">
+                  My expertise lies in transforming complex problems into
+                  elegant solutions while keeping user experience at the
+                  forefront. I thrive on exploring emerging technologies and
+                  contributing to open-source projects that make web development
+                  more accessible.
+                </p>
+
+                <p className="text-gray-100 leading-relaxed text-lg">
+                  Continuously evolving my skill set through hands-on projects
+                  and professional collaborations, I maintain a strong focus on
+                  clean architecture and sustainable development practices.
+                </p>
+
+                {/* <p className="bg-emerald-900/30 border border-emerald-400/30 px-4 py-3 rounded-lg text-emerald-200 text-lg">
+                  Currently seeking opportunities to collaborate on meaningful
+                  projects and contribute to innovative teams.
+                </p> */}
+              </div>
+            </div>
+
+            {/* Image Container */}
+            <div className="order-1 lg:order-2 flex justify-center items-start">
+              <div className="relative group w-[400px] h-[400px]">
+                <img
+                  src="image/rajeev.jpg"
+                  alt="Rajeev Kumar - Full Stack Developer"
+                  className="absolute inset-0 w-full h-full object-cover rounded-3xl aspect-square transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl grayscale group-hover:grayscale-0"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/30 to-transparent rounded-lg" />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
